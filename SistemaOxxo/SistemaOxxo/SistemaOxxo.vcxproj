@@ -128,18 +128,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="cliente.cpp" />
-    <ClCompile Include="producto.cpp" />
+    <ClCompile Include="source\cliente.cpp" />
     <ClCompile Include="source\main.cpp" />
+    <ClCompile Include="source\menu.cpp" />
+    <ClCompile Include="source\producto.cpp" />
     <ClCompile Include="source\proveedor.cpp" />
     <ClCompile Include="source\sistema.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="cliente.h" />
+    <ClInclude Include="include\cliente.h" />
+    <ClInclude Include="include\menu.h" />
     <ClInclude Include="include\Prerequisites.h" />
+    <ClInclude Include="include\producto.h" />
     <ClInclude Include="include\proveedor.h" />
     <ClInclude Include="include\sistema.h" />
-    <ClInclude Include="producto.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
