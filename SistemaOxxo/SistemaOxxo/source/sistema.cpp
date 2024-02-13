@@ -19,8 +19,5 @@ void Sistema::registrarproveedor(proveedor proveedor) {
 void Sistema::registrarcliente(cliente cliente) {
    
 }
-
-// Función para borrar clientes
 void Sistema::borrarcliente(cliente cliente) {
-    
 }

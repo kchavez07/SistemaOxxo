@@ -9,6 +9,7 @@ private:
 	string correo;
 
 public: //Contructor 
+	cliente(std::string _nombre);
 	cliente(string _nombre, int _puntos, string _telefono, string _correo);
 
 	//declaracion

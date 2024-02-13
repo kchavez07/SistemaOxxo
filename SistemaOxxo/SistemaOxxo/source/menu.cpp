@@ -1,5 +1,7 @@
 #include "menu.h"
+#include "sistema.h"
 #include <iostream>
+#include <borrarcliente.h>
 
 using namespace std;
 
@@ -50,23 +52,34 @@ void Menu::mostrarMenu(Sistema& sistema) {
             string nombreCliente;
             string telefonoCliente;
             string correoCliente;
+            int puntosCliente = 0;  
+
             // Captura de datos
-            // ...
-            cliente nuevoCliente(nombreCliente, telefonoCliente, correoCliente);
+  
+            cliente nuevoCliente(nombreCliente, puntosCliente, telefonoCliente, correoCliente);
             sistema.registrarcliente(nuevoCliente);
             cout << "Cliente registrado con éxito." << endl;
             break;
         }
+
         case 5: {
             // Lógica para eliminar cliente
-            string borrarcliente;
+            string nombreCliente;
+            string telefonoCliente;
+            string correoCliente;
+
             // Captura de datos
             // ...
-            sistema.borrarcliente(borrarcliente);
+// Crear un objeto de tipo cliente usando los datos capturados
+            cliente clienteAEliminar(nombreCliente, 0, telefonoCliente, correoCliente);
+
+            // Llamar a la función borrarcliente con el objeto cliente
+            sistema.borrarcliente(clienteAEliminar);
             cout << "Cliente eliminado con éxito." << endl;
             break;
         }
-              // Agrega más casos según sea necesario
+
+              
         }
 
     } while (opcion != 0);

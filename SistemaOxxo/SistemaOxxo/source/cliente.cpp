@@ -1,6 +1,9 @@
 #include "cliente.h"
 
 // Constructor
+cliente::cliente(std::string _nombre) : nombre(_nombre), puntos(0), Telefono(""), correo("") {
+    // Puedes inicializar otros miembros según sea necesario
+}
 cliente::cliente(string _nombre, int _puntos, string _telefono, string _correo)
     : nombre(_nombre), puntos(_puntos), Telefono(_telefono), correo(_correo) {}
 

@@ -128,6 +128,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="agregarcliente.cpp" />
+    <ClCompile Include="borrarcliente.cpp" />
     <ClCompile Include="source\cliente.cpp" />
     <ClCompile Include="source\main.cpp" />
     <ClCompile Include="source\menu.cpp" />
@@ -136,6 +138,8 @@
     <ClCompile Include="source\sistema.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="agregarcliente.h" />
+    <ClInclude Include="borrarcliente.h" />
     <ClInclude Include="include\cliente.h" />
     <ClInclude Include="include\menu.h" />
     <ClInclude Include="include\Prerequisites.h" />
