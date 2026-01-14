@@ -36,20 +36,21 @@ Este proyecto hace uso de:
 SistemaOxxo/
 │
 ├── include/
-│ ├── Cliente.h
-│ ├── Proveedor.h
-│ ├── Producto.h
-│ ├── ProductoBebida.h
-│ ├── ProductoSnack.h
-│ ├── SistemaOxxo.h
-│ ├── Menu.h
-│ ├── Input.h
-│ └── OxxoException.h
+│   ├── Cliente.h
+│   ├── Proveedor.h
+│   ├── Producto.h
+│   ├── ProductoBebida.h
+│   ├── ProductoSnack.h
+│   ├── SistemaOxxo.h
+│   ├── Menu.h
+│   ├── Input.h
+│   └── OxxoException.h
 │
 ├── source/
-│ ├── SistemaOxxo.cpp
-│ ├── Menu.cpp
-│ └── main.cpp
+│   ├── SistemaOxxo.cpp
+│   ├── Menu.cpp
+│   └── main.cpp
+│
 
 ---
 
