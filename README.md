@@ -1,2 +1,128 @@
-# SistemaOxxo
-En este primer proyecto vamos a desarrollar un sistema del Oxxo al igual que en la vida real. Esto podría ser por medio de una acción como registrar clientes, registrar productos, vender productos.
+# 🏪 Sistema OXXO – Simulación de Punto de Venta en C++
+
+Proyecto académico desarrollado en **C++** que simula un sistema básico de gestión tipo **OXXO**, enfocado en **buenas prácticas de programación**, **Programación Orientada a Objetos** y una **arquitectura limpia y profesional**.
+
+Este proyecto fue **refactorizado completamente** con el objetivo de que sea **publicable como portafolio profesional**, no solo como una práctica escolar.
+
+---
+
+## 🎯 Objetivo del proyecto
+
+Simular un **sistema de punto de venta** que permita:
+
+- 👤 Gestión de clientes  
+- 🏭 Gestión de proveedores  
+- 📦 Gestión de productos  
+- 💰 Venta de productos con control de inventario  
+- ⚠️ Manejo robusto de errores y validaciones  
+
+Todo aplicando principios sólidos de diseño en **C++ moderno**.
+
+---
+
+## 🧱 Arquitectura y conceptos aplicados
+
+Este proyecto hace uso de:
+
+- 🧠 **Programación Orientada a Objetos (POO)**
+- 🧩 **Clases abstractas** (`Producto`)
+- 🔁 **Polimorfismo**
+- 🔐 **Smart Pointers (`std::unique_ptr`)**
+- 📚 **STL** (`unordered_map`, `vector`, `optional`)
+- 🚨 **Manejo de excepciones personalizadas**
+- 🧼 **Separación clara de responsabilidades**
+- 📁 **Estructura profesional de proyecto (`include/` y `source/`)**
+
+SistemaOxxo/
+│
+├── include/
+│ ├── Cliente.h
+│ ├── Proveedor.h
+│ ├── Producto.h
+│ ├── ProductoBebida.h
+│ ├── ProductoSnack.h
+│ ├── SistemaOxxo.h
+│ ├── Menu.h
+│ ├── Input.h
+│ └── OxxoException.h
+│
+├── source/
+│ ├── SistemaOxxo.cpp
+│ ├── Menu.cpp
+│ └── main.cpp
+
+---
+
+## ⚙️ Funcionalidades principales
+
+### 👤 Clientes
+- Registrar clientes
+- Eliminar clientes
+- Listar clientes
+- Gestión de puntos
+
+### 🏭 Proveedores
+- Registrar proveedores
+- Asociar productos a proveedores
+- Listar proveedores
+
+### 📦 Productos
+- Registro de productos por tipo:
+  - 🥤 **Bebidas** (con impuesto si son azucaradas)
+  - 🍫 **Snacks** (con recargo si son importados)
+- Control de inventario (stock)
+- Uso de polimorfismo para el cálculo del precio final
+
+### 💰 Ventas
+- Venta con o sin cliente
+- Validación de stock disponible
+- Manejo de errores en tiempo de ejecución
+
+---
+
+## 🚨 Manejo de errores
+
+El sistema implementa una excepción personalizada (`OxxoException`) para manejar casos como:
+
+- ❌ Productos duplicados
+- ❌ Clientes inexistentes
+- ❌ Stock insuficiente
+- ❌ Entradas inválidas del usuario
+
+Esto mejora la **robustez**, **seguridad** y **legibilidad** del sistema.
+
+---
+
+## ▶️ Cómo compilar y ejecutar
+
+### 🛠 Requisitos
+- **Visual Studio 2022**
+- Estándar **C++17**
+
+### 🚀 Pasos
+1. Abrir el proyecto en Visual Studio
+2. Verificar que el estándar sea **ISO C++17**
+3. Compilar la solución
+4. Ejecutar el programa desde la consola
+
+---
+
+## 📌 Estado del proyecto
+
+✅ Funcional  
+✅ Compila sin errores  
+✅ Arquitectura estable  
+✅ Código limpio y refactorizado  
+✅ Listo para portafolio profesional  
+
+---
+
+## 👨‍💻 Autor
+**Kevin Jair Chávez Castro**  
+
+
+
+
+
+## 📂 Estructura del proyecto
+
