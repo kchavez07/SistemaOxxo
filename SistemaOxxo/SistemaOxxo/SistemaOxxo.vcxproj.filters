@@ -13,57 +13,51 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="includes">
+      <UniqueIdentifier>{5a9cba08-44eb-47fc-a2ef-c8574eac5798}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{13a92184-6fef-4a87-a4d3-610a09414d45}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="source\main.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
-    <ClCompile Include="source\sistema.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
-    <ClCompile Include="source\proveedor.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
-    <ClCompile Include="source\producto.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
     <ClCompile Include="source\cliente.cpp">
-      <Filter>Archivos de origen</Filter>
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="source\main.cpp">
+      <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="source\menu.cpp">
-      <Filter>Archivos de origen</Filter>
+      <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="agregarcliente.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
-    <ClCompile Include="borrarcliente.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="source\SistemaOxxo.cpp">
+      <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\Prerequisites.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="include\sistema.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="include\proveedor.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="include\producto.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
     <ClInclude Include="include\cliente.h">
-      <Filter>Archivos de encabezado</Filter>
+      <Filter>includes</Filter>
     </ClInclude>
     <ClInclude Include="include\menu.h">
-      <Filter>Archivos de encabezado</Filter>
+      <Filter>includes</Filter>
     </ClInclude>
-    <ClInclude Include="agregarcliente.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="include\Prerequisites.h">
+      <Filter>includes</Filter>
     </ClInclude>
-    <ClInclude Include="borrarcliente.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="include\OxxoException.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProductoBebida.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProductoSnack.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Input.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SistemaOxxo.h">
+      <Filter>includes</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -104,7 +104,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>./include/;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir)include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -119,6 +120,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir)include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -128,24 +131,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="agregarcliente.cpp" />
-    <ClCompile Include="borrarcliente.cpp" />
     <ClCompile Include="source\cliente.cpp" />
     <ClCompile Include="source\main.cpp" />
     <ClCompile Include="source\menu.cpp" />
-    <ClCompile Include="source\producto.cpp" />
-    <ClCompile Include="source\proveedor.cpp" />
-    <ClCompile Include="source\sistema.cpp" />
+    <ClCompile Include="source\SistemaOxxo.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="agregarcliente.h" />
-    <ClInclude Include="borrarcliente.h" />
     <ClInclude Include="include\cliente.h" />
+    <ClInclude Include="include\Input.h" />
     <ClInclude Include="include\menu.h" />
+    <ClInclude Include="include\OxxoException.h" />
     <ClInclude Include="include\Prerequisites.h" />
-    <ClInclude Include="include\producto.h" />
-    <ClInclude Include="include\proveedor.h" />
-    <ClInclude Include="include\sistema.h" />
+    <ClInclude Include="include\ProductoBebida.h" />
+    <ClInclude Include="include\ProductoSnack.h" />
+    <ClInclude Include="include\SistemaOxxo.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

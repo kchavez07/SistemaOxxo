@@ -1,20 +1,24 @@
 #pragma once
-#include "Prerequisites.h" 
+#include "Prerequisites.h"
+#include "OxxoException.h"
 
-class proveedor
-{
+class Proveedor {
 private:
-	string marca; 
-	vector<string>listaproductos;
+    std::string marca_;
+    std::vector<std::string> productos_; // guardamos nombres para mantenerlo ligero
 
 public:
-	proveedor(string _marca);
+    Proveedor() = default;
+    explicit Proveedor(std::string marca) : marca_(std::move(marca)) {
+        if (marca_.empty()) throw OxxoException("Marca de proveedor vacía.");
+    }
 
-	//metodos set y get
-	void setmarca(string _marca);
-	string getmarca();
+    const std::string& marca() const { return marca_; }
+    const std::vector<std::string>& listaProductos() const { return productos_; }
 
-	void agregarproducto(string producto);
-	vector<string>getlistaprodctos();
-
+    void agregarProducto(const std::string& nombreProducto) {
+        if (nombreProducto.empty()) throw OxxoException("Nombre de producto vacío.");
+        if (std::find(productos_.begin(), productos_.end(), nombreProducto) == productos_.end())
+            productos_.push_back(nombreProducto);
+    }
 };
