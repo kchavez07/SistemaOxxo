@@ -75,8 +75,8 @@ SistemaOxxo/
 
 ### 📦 Productos
 - Registro de productos por tipo:
-  - 🥤 **Bebidas** (con impuesto si son azucaradas)
-  - 🍫 **Snacks** (con recargo si son importados)
+- 🥤 **Bebidas** (con impuesto si son azucaradas)
+- 🍫 **Snacks** (con recargo si son importados)
 - Control de inventario (stock)
 - Uso de polimorfismo para el cálculo del precio final  
 
