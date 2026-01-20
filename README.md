@@ -142,10 +142,11 @@ Esto mejora la **robustez**, **seguridad** y **legibilidad** del sistema.
 
 ---
 
-## 👨‍💻 Autor
+## 👤 Autor
 
 **Kevin Jair Chávez Castro**  
-Ingeniero en Desarrollo de Videojuegos y Medios Interactivos, con enfoque en **programación en C++**, **arquitectura de sistemas**, y **desarrollo de aplicaciones interactivas**.
+Desarrollador de Videojuegos y Software  
+Enfoque en C++, programación de sistemas y desarrollo de aplicaciones interactivas.
 
 ---
 
