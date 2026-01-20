@@ -57,7 +57,7 @@ SistemaOxxo/
 │   └── main.cpp
 │
 └── README.md
-
+```
 ---
 
 ## ⚙️ Funcionalidades principales
