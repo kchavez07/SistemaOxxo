@@ -36,7 +36,9 @@ Este proyecto hace uso de:
 ---
 
 ## 📂 Estructura del proyecto
-SistemaOxxo
+
+```text
+SistemaOxxo/
 │
 ├── include/
 │   ├── Cliente.h
