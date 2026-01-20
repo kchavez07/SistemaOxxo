@@ -27,13 +27,16 @@ Este proyecto hace uso de:
 - 🧠 **Programación Orientada a Objetos (POO)**
 - 🧩 **Clases abstractas** (`Producto`)
 - 🔁 **Polimorfismo**
-- 🔐 **Smart Pointers (`std::unique_ptr`)**
+- 🔐 **Smart Pointers** (`std::unique_ptr`)
 - 📚 **STL** (`unordered_map`, `vector`, `optional`)
 - 🚨 **Manejo de excepciones personalizadas**
 - 🧼 **Separación clara de responsabilidades**
 - 📁 **Estructura profesional de proyecto (`include/` y `source/`)**
 
-SistemaOxxo/
+---
+
+## 📂 Estructura del proyecto
+SistemaOxxo
 │
 ├── include/
 │   ├── Cliente.h
@@ -51,33 +54,34 @@ SistemaOxxo/
 │   ├── Menu.cpp
 │   └── main.cpp
 │
+└── README.md
 
 ---
 
 ## ⚙️ Funcionalidades principales
 
 ### 👤 Clientes
-- Registrar clientes
-- Eliminar clientes
-- Listar clientes
-- Gestión de puntos
+- Registrar clientes  
+- Eliminar clientes  
+- Listar clientes  
+- Gestión de puntos  
 
 ### 🏭 Proveedores
-- Registrar proveedores
-- Asociar productos a proveedores
-- Listar proveedores
+- Registrar proveedores  
+- Asociar productos a proveedores  
+- Listar proveedores  
 
 ### 📦 Productos
 - Registro de productos por tipo:
   - 🥤 **Bebidas** (con impuesto si son azucaradas)
   - 🍫 **Snacks** (con recargo si son importados)
 - Control de inventario (stock)
-- Uso de polimorfismo para el cálculo del precio final
+- Uso de polimorfismo para el cálculo del precio final  
 
 ### 💰 Ventas
-- Venta con o sin cliente
-- Validación de stock disponible
-- Manejo de errores en tiempo de ejecución
+- Venta con o sin cliente  
+- Validación de stock disponible  
+- Manejo de errores en tiempo de ejecución  
 
 ---
 
@@ -85,12 +89,21 @@ SistemaOxxo/
 
 El sistema implementa una excepción personalizada (`OxxoException`) para manejar casos como:
 
-- ❌ Productos duplicados
-- ❌ Clientes inexistentes
-- ❌ Stock insuficiente
-- ❌ Entradas inválidas del usuario
+- ❌ Productos duplicados  
+- ❌ Clientes inexistentes  
+- ❌ Stock insuficiente  
+- ❌ Entradas inválidas del usuario  
 
 Esto mejora la **robustez**, **seguridad** y **legibilidad** del sistema.
+
+---
+
+## 🧠 Decisiones de diseño relevantes
+
+- Se utiliza `std::unique_ptr` para garantizar **propiedad única** de los productos y evitar fugas de memoria.
+- La clase abstracta `Producto` permite extender el sistema con nuevos tipos sin modificar la lógica central.
+- `SistemaOxxo` funciona como capa de negocio, separada del menú y del input.
+- El sistema prioriza **claridad y mantenibilidad** sobre complejidad innecesaria.
 
 ---
 
@@ -118,12 +131,17 @@ Esto mejora la **robustez**, **seguridad** y **legibilidad** del sistema.
 
 ---
 
+## 🚀 Posibles mejoras futuras
+
+- Persistencia de datos (guardar/cargar clientes y productos)
+- Pruebas unitarias
+- Interfaz gráfica
+- Reportes de ventas
+
+---
+
 ## 👨‍💻 Autor
+
 **Kevin Jair Chávez Castro**  
-
-
-
-
-
-## 📂 Estructura del proyecto
+Ingeniero en Desarrollo de Videojuegos y Medios Interactivos, con enfoque en **programación en C++**, **arquitectura de sistemas**, y **desarrollo de aplicaciones interactivas**.
 
