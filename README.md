@@ -147,3 +147,12 @@ Esto mejora la **robustez**, **seguridad** y **legibilidad** del sistema.
 **Kevin Jair Chávez Castro**  
 Ingeniero en Desarrollo de Videojuegos y Medios Interactivos, con enfoque en **programación en C++**, **arquitectura de sistemas**, y **desarrollo de aplicaciones interactivas**.
 
+---
+
+## 📄 Disclaimer
+
+This project is a software simulation created for development and demonstration purposes.  
+It is not affiliated with, endorsed by, or associated with **OXXO** or **FEMSA** in any way.
+
+All brand names, trademarks, and references are used strictly for educational and illustrative purposes.
+
